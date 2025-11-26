@@ -4,12 +4,22 @@
   <img src="assets/muse-vision-logo.png" alt="MUSE Vision Logo" width="200"/>
 </p>
 
-MUSE Vision은 딥러닝 기반 이미지 인식, 얼굴 검출/인식, 객체 탐지, 유사 이미지 검색을 제공하는 엔터프라이즈 비전 AI 플랫폼입니다.
+<p align="center">
+  <strong>Enterprise Computer Vision Platform with Real-time Object Detection, Face Recognition & Semantic Image Search</strong>
+</p>
+
+<p align="center">
+  <a href="https://yoon-gu.github.io/muse-vision/demo/">
+    <img src="https://img.shields.io/badge/🎯_Live_Demo-Try_Now-00d4ff?style=for-the-badge" alt="Live Demo"/>
+  </a>
+</p>
 
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+
+MUSE Vision은 딥러닝 기반 이미지 인식, 얼굴 검출/인식, 객체 탐지, 유사 이미지 검색을 제공하는 엔터프라이즈 비전 AI 플랫폼입니다.
 
 ## Features
 

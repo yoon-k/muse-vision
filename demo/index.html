@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSE Vision - AI Image Recognition & Computer Vision Platform</title>
+    <meta name="description" content="Enterprise-grade computer vision platform with object detection, face recognition, and semantic image search.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <circle cx="12" cy="12" r="3"/>
+                        <line x1="12" y1="2" x2="12" y2="5"/>
+                        <line x1="12" y1="19" x2="12" y2="22"/>
+                        <line x1="2" y1="12" x2="5" y2="12"/>
+                        <line x1="19" y1="12" x2="22" y2="12"/>
+                    </svg>
+                </div>
+                <span class="brand-text">MUSE Vision</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features" data-i18n="nav.features">Features</a>
+                <a href="#demo" data-i18n="nav.demo">Live Demo</a>
+                <a href="#models" data-i18n="nav.models">Models</a>
+                <a href="https://github.com/yoon-gu/muse-vision" target="_blank">GitHub</a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-selector" id="lang-selector"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="vision-grid"></div>
+            <div class="scan-line"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-i18n="hero.badge">Computer Vision AI</div>
+            <h1 class="hero-title">
+                <span data-i18n="hero.title1">See the World</span>
+                <span class="gradient-text" data-i18n="hero.title2">Through AI Eyes</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+                Enterprise-grade computer vision platform with real-time object detection,
+                face recognition, and semantic image search powered by state-of-the-art deep learning.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">99.8%</span>
+                    <span class="stat-label" data-i18n="hero.stat1">Face Recognition Accuracy</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">12ms</span>
+                    <span class="stat-label" data-i18n="hero.stat2">Detection Speed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">100+</span>
+                    <span class="stat-label" data-i18n="hero.stat3">Object Categories</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">10M+</span>
+                    <span class="stat-label" data-i18n="hero.stat4">Images Indexed</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#demo" class="btn btn-primary" data-i18n="hero.tryDemo">Try Live Demo</a>
+                <a href="https://github.com/yoon-gu/muse-vision" class="btn btn-secondary" target="_blank">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    <span data-i18n="hero.viewGithub">View on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="features.title">Powerful Vision Capabilities</h2>
+                <p class="section-subtitle" data-i18n="features.subtitle">
+                    State-of-the-art deep learning models for every computer vision task
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon detection">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <rect x="7" y="7" width="10" height="10" rx="1" stroke-dasharray="2 2"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="features.detection.title">Object Detection</h3>
+                    <p data-i18n="features.detection.desc">YOLOv8-powered real-time detection with 100+ object categories and custom model training support.</p>
+                    <ul class="feature-list">
+                        <li data-i18n="features.detection.item1">Real-time Detection (12ms)</li>
+                        <li data-i18n="features.detection.item2">100+ Categories</li>
+                        <li data-i18n="features.detection.item3">Custom Training</li>
+                        <li data-i18n="features.detection.item4">Video Stream Analysis</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon face">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="5"/>
+                            <path d="M20 21a8 8 0 00-16 0"/>
+                            <circle cx="9" cy="7" r="1" fill="currentColor"/>
+                            <circle cx="15" cy="7" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="features.face.title">Face Recognition</h3>
+                    <p data-i18n="features.face.desc">Industry-leading 99.8% accuracy with ArcFace, anti-spoofing liveness detection, and automatic clustering.</p>
+                    <ul class="feature-list">
+                        <li data-i18n="features.face.item1">99.8% Accuracy (ArcFace)</li>
+                        <li data-i18n="features.face.item2">Liveness Detection</li>
+                        <li data-i18n="features.face.item3">Auto Clustering</li>
+                        <li data-i18n="features.face.item4">RetinaFace Detection</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon search">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            <rect x="7" y="7" width="8" height="6" rx="1"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="features.search.title">Image Search</h3>
+                    <p data-i18n="features.search.desc">CLIP-powered semantic search enabling both visual similarity and text-to-image queries at scale.</p>
+                    <ul class="feature-list">
+                        <li data-i18n="features.search.item1">Visual Similarity Search</li>
+                        <li data-i18n="features.search.item2">Text-to-Image (CLIP)</li>
+                        <li data-i18n="features.search.item3">10M+ Image Index</li>
+                        <li data-i18n="features.search.item4">Real-time Indexing</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon cctv">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 7l-7 5 7 5V7z"/>
+                            <rect x="1" y="5" width="15" height="14" rx="2"/>
+                            <circle cx="8" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="features.cctv.title">CCTV Integration</h3>
+                    <p data-i18n="features.cctv.desc">Live RTSP/HLS streaming with motion detection, person tracking, and real-time event alerts.</p>
+                    <ul class="feature-list">
+                        <li data-i18n="features.cctv.item1">RTSP/HLS Streaming</li>
+                        <li data-i18n="features.cctv.item2">Motion Detection</li>
+                        <li data-i18n="features.cctv.item3">Multi-Camera Tracking</li>
+                        <li data-i18n="features.cctv.item4">Real-time Alerts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="demo.title">Interactive Demo</h2>
+                <p class="section-subtitle" data-i18n="demo.subtitle">
+                    Experience MUSE Vision's capabilities in real-time
+                </p>
+            </div>
+
+            <div class="demo-tabs">
+                <button class="demo-tab active" data-tab="detection" data-i18n="demo.tabs.detection">Object Detection</button>
+                <button class="demo-tab" data-tab="face" data-i18n="demo.tabs.face">Face Recognition</button>
+                <button class="demo-tab" data-tab="search" data-i18n="demo.tabs.search">Image Search</button>
+            </div>
+
+            <!-- Object Detection Demo -->
+            <div class="demo-panel active" id="detection-panel">
+                <div class="demo-container">
+                    <div class="demo-upload-area" id="detection-upload">
+                        <div class="upload-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21 15 16 10 5 21"/>
+                            </svg>
+                            <p data-i18n="demo.detection.upload">Drag & drop an image or click to upload</p>
+                            <span class="upload-hint" data-i18n="demo.detection.hint">Supports JPG, PNG, WEBP</span>
+                        </div>
+                        <input type="file" id="detection-input" accept="image/*" hidden>
+                        <canvas id="detection-canvas"></canvas>
+                        <img id="detection-preview" src="" alt="Preview" style="display: none;">
+                    </div>
+                    <div class="demo-results" id="detection-results">
+                        <div class="results-header">
+                            <h4 data-i18n="demo.detection.results">Detection Results</h4>
+                            <span class="processing-time" id="detection-time"></span>
+                        </div>
+                        <div class="results-list" id="detection-list">
+                            <div class="empty-state">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <rect x="7" y="7" width="10" height="10" rx="1" stroke-dasharray="2 2"/>
+                                </svg>
+                                <span data-i18n="demo.detection.empty">Upload an image to detect objects</span>
+                            </div>
+                        </div>
+                        <div class="demo-samples">
+                            <span data-i18n="demo.detection.try">Try samples:</span>
+                            <button class="sample-btn" onclick="loadSampleImage('detection', 'street')">Street Scene</button>
+                            <button class="sample-btn" onclick="loadSampleImage('detection', 'office')">Office</button>
+                            <button class="sample-btn" onclick="loadSampleImage('detection', 'pets')">Pets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Face Recognition Demo -->
+            <div class="demo-panel" id="face-panel">
+                <div class="demo-container">
+                    <div class="demo-upload-area" id="face-upload">
+                        <div class="upload-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+                                <circle cx="12" cy="8" r="5"/>
+                                <path d="M20 21a8 8 0 00-16 0"/>
+                            </svg>
+                            <p data-i18n="demo.face.upload">Upload an image with faces</p>
+                            <span class="upload-hint" data-i18n="demo.face.hint">We'll detect and analyze all faces</span>
+                        </div>
+                        <input type="file" id="face-input" accept="image/*" hidden>
+                        <canvas id="face-canvas"></canvas>
+                        <img id="face-preview" src="" alt="Preview" style="display: none;">
+                    </div>
+                    <div class="demo-results" id="face-results">
+                        <div class="results-header">
+                            <h4 data-i18n="demo.face.results">Face Analysis</h4>
+                            <span class="processing-time" id="face-time"></span>
+                        </div>
+                        <div class="results-list" id="face-list">
+                            <div class="empty-state">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32">
+                                    <circle cx="12" cy="8" r="5"/>
+                                    <path d="M20 21a8 8 0 00-16 0"/>
+                                </svg>
+                                <span data-i18n="demo.face.empty">Upload an image to detect faces</span>
+                            </div>
+                        </div>
+                        <div class="demo-samples">
+                            <span data-i18n="demo.face.try">Try samples:</span>
+                            <button class="sample-btn" onclick="loadSampleImage('face', 'group')">Group Photo</button>
+                            <button class="sample-btn" onclick="loadSampleImage('face', 'portrait')">Portrait</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Search Demo -->
+            <div class="demo-panel" id="search-panel">
+                <div class="demo-container search-container">
+                    <div class="search-input-area">
+                        <div class="search-mode-toggle">
+                            <button class="search-mode active" data-mode="text">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                                </svg>
+                                <span data-i18n="demo.search.textMode">Text Search</span>
+                            </button>
+                            <button class="search-mode" data-mode="image">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                                <span data-i18n="demo.search.imageMode">Image Search</span>
+                            </button>
+                        </div>
+                        <div class="search-text-input active" id="text-search-area">
+                            <input type="text" id="search-query" placeholder="a dog playing in the park..." data-i18n-placeholder="demo.search.placeholder">
+                            <button class="search-btn" onclick="performSearch()">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="search-image-input" id="image-search-area">
+                            <div class="image-upload-mini">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                    <polyline points="17 8 12 3 7 8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                                <span data-i18n="demo.search.uploadImage">Upload query image</span>
+                                <input type="file" id="search-image-input" accept="image/*" hidden>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-results-grid" id="search-results">
+                        <div class="search-empty">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="48" height="48">
+                                <circle cx="11" cy="11" r="8"/>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            </svg>
+                            <p data-i18n="demo.search.empty">Search for images using text or upload a query image</p>
+                            <div class="search-suggestions">
+                                <span data-i18n="demo.search.suggestions">Try:</span>
+                                <button class="suggestion-btn" onclick="searchSuggestion('sunset over mountains')">sunset over mountains</button>
+                                <button class="suggestion-btn" onclick="searchSuggestion('cat sleeping')">cat sleeping</button>
+                                <button class="suggestion-btn" onclick="searchSuggestion('city skyline at night')">city skyline at night</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section class="models-section" id="models">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="models.title">AI Models & Performance</h2>
+                <p class="section-subtitle" data-i18n="models.subtitle">
+                    Powered by state-of-the-art deep learning architectures
+                </p>
+            </div>
+            <div class="models-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-i18n="models.table.task">Task</th>
+                            <th data-i18n="models.table.model">Model</th>
+                            <th data-i18n="models.table.accuracy">Accuracy</th>
+                            <th data-i18n="models.table.speed">Speed (GPU)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Object Detection</td>
+                            <td><span class="model-badge yolo">YOLOv8x</span></td>
+                            <td>mAP 53.9</td>
+                            <td>12ms</td>
+                        </tr>
+                        <tr>
+                            <td>Face Detection</td>
+                            <td><span class="model-badge retina">RetinaFace</span></td>
+                            <td>99.5%</td>
+                            <td>8ms</td>
+                        </tr>
+                        <tr>
+                            <td>Face Recognition</td>
+                            <td><span class="model-badge arcface">ArcFace</span></td>
+                            <td>99.8%</td>
+                            <td>5ms</td>
+                        </tr>
+                        <tr>
+                            <td>Image Embedding</td>
+                            <td><span class="model-badge clip">CLIP ViT-L</span></td>
+                            <td>-</td>
+                            <td>15ms</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section class="architecture-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="arch.title">System Architecture</h2>
+                <p class="section-subtitle" data-i18n="arch.subtitle">
+                    Scalable, production-ready infrastructure
+                </p>
+            </div>
+            <div class="arch-diagram">
+                <div class="arch-layer sources">
+                    <div class="layer-title" data-i18n="arch.sources">Input Sources</div>
+                    <div class="layer-items">
+                        <div class="arch-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21 15 16 10 5 21"/>
+                            </svg>
+                            <span>Image</span>
+                        </div>
+                        <div class="arch-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="23 7 16 12 23 17 23 7"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2"/>
+                            </svg>
+                            <span>Video</span>
+                        </div>
+                        <div class="arch-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 7l-7 5 7 5V7z"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2"/>
+                                <circle cx="8" cy="12" r="2"/>
+                            </svg>
+                            <span>CCTV</span>
+                        </div>
+                        <div class="arch-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                            <span>Webcam</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="arch-connector"></div>
+                <div class="arch-layer api">
+                    <div class="layer-title">MUSE Vision API (FastAPI)</div>
+                </div>
+                <div class="arch-connector"></div>
+                <div class="arch-layer services">
+                    <div class="layer-title" data-i18n="arch.services">AI Services</div>
+                    <div class="layer-items">
+                        <div class="arch-item service">
+                            <span class="service-name">Detection</span>
+                            <span class="service-model">YOLO v8</span>
+                        </div>
+                        <div class="arch-item service">
+                            <span class="service-name">Recognition</span>
+                            <span class="service-model">ArcFace</span>
+                        </div>
+                        <div class="arch-item service">
+                            <span class="service-name">Search</span>
+                            <span class="service-model">CLIP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="arch-connector"></div>
+                <div class="arch-layer storage">
+                    <div class="layer-title" data-i18n="arch.storage">Storage Layer</div>
+                    <div class="layer-items">
+                        <div class="arch-item db">
+                            <span>PostgreSQL</span>
+                            <small>Metadata</small>
+                        </div>
+                        <div class="arch-item db">
+                            <span>Milvus</span>
+                            <small>Vectors</small>
+                        </div>
+                        <div class="arch-item db">
+                            <span>Redis</span>
+                            <small>Cache</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="tech.title">Technology Stack</h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <span class="tech-icon">🐍</span>
+                    <span class="tech-name">Python 3.11</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-icon">🔥</span>
+                    <span class="tech-name">PyTorch</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-icon">⚡</span>
+                    <span class="tech-name">FastAPI</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-icon">🎯</span>
+                    <span class="tech-name">YOLOv8</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-icon">👤</span>
+                    <span class="tech-name">ArcFace</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-icon">🔍</span>
+                    <span class="tech-name">CLIP</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-icon">🗄️</span>
+                    <span class="tech-name">Milvus</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-icon">🐘</span>
+                    <span class="tech-name">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n="cta.title">Ready to Build with MUSE Vision?</h2>
+                <p data-i18n="cta.subtitle">Get started with our open-source platform today</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/yoon-gu/muse-vision" class="btn btn-primary" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        <span data-i18n="cta.github">View on GitHub</span>
+                    </a>
+                    <a href="https://github.com/yoon-gu/muse-vision#quick-start" class="btn btn-secondary" target="_blank" data-i18n="cta.docs">Quick Start Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="3"/>
+                            <line x1="12" y1="2" x2="12" y2="5"/>
+                            <line x1="12" y1="19" x2="12" y2="22"/>
+                            <line x1="2" y1="12" x2="5" y2="12"/>
+                            <line x1="19" y1="12" x2="22" y2="12"/>
+                        </svg>
+                    </div>
+                    <span>MUSE Vision</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/yoon-gu" target="_blank">GitHub</a>
+                    <a href="https://github.com/yoon-gu/muse-vision/issues" target="_blank">Issues</a>
+                    <a href="https://github.com/yoon-gu/muse-vision/blob/main/LICENSE" target="_blank">License</a>
+                </div>
+                <div class="footer-copy">
+                    <span>&copy; 2024 MUSE Vision. MIT License.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+</html>
