@@ -9,10 +9,12 @@
 </p>
 
 <p align="center">
-  <a href="https://yoon-gu.github.io/muse-vision/demo/">
+  <a href="https://yoon-k.github.io/muse-vision/">
     <img src="https://img.shields.io/badge/🎯_Live_Demo-Try_Now-00d4ff?style=for-the-badge" alt="Live Demo"/>
   </a>
 </p>
+
+> **[Demo 바로가기](https://yoon-k.github.io/muse-vision/)** - 얼굴 인식, 객체 탐지, 이미지 검색 체험
 
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
